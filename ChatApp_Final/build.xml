@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="run" name="ChatApp_Final">
+
+              	<target name="run" depends="compile">
+              	<java classname="server.ServerWithGUI">
+              	
+              		<classpath path="staging"/>
+              		</java>
+              	</target>
+              	<target name="compile">
+              	<javac includeantruntime="false" srcdir="./src" destdir="staging"></javac>
+              	</target>
+</project>
